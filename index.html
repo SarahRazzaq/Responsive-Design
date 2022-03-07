@@ -9,30 +9,36 @@
     <title>Japan</title>
 </head>
 <body>
-    <header>
+    <div class="main-container">
         <div class="item1">
             <img src="images/image_Logo.png" alt="Logo_Head.">
         </div>
         <div class="item2">
             <nav>
-                <p>Works</p>
-                <p>Services</p>
-                <p>Contact</p>
+                <div class="menu-list">
+                    <p>Works</p>
+                    <p>Services</p>
+                    <p>Contact</p>
+                </div>
                 <div class="menu_logo">
                    <img src="images/image_nav_Icon.png" alt="">
                 </div>
             </nav>
-        </div> 
-    </header>  
-    <div class="text-container">
+        </div>  
         <div class="item3">
-            <h1>Japan</h1>
+            <p class="title">Japan</p>
         </div>    
         <div class="item4">
             <h4>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</h4>
         </div>
         <div class="item5">
-            <img src="images/image_fuji.png" alt="">
+            <picture class="fuji">
+                <source media="(max-width: 600px)" srcset="./images/Image_s.png">
+                <source media="(max-width: 1000px)" srcset="./Images/Image_m.png">
+                <source media="(min-width: 1001px)" srcset="./Images/image_l.png">
+                <img src="images/Image_s.png" alt="">
+            </picture>
+            <!--<img class="fuji" src="images/Image_s.png" alt="Fuji" srcset="images/image_m.png ">-->
         </div>
     </div>
 </body>

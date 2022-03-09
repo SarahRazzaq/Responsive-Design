@@ -1,3 +1,4 @@
+
 body{
     width: 100%;
     min-height: 810px;
@@ -33,7 +34,7 @@ nav{
 }
 .menu-list{
     min-width:267px;
-    height: 25;
+    height: 25px;
     color: #ffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
@@ -75,7 +76,7 @@ h4{
     line-height: 34px;
     text-align: center;
     color: #FFFFFF;
-    margin: none;
+    margin: 0px;
 }
 .item5{
     max-width:100%;
@@ -88,7 +89,18 @@ h4{
     height:auto;
     
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:600px){
+    div.menu-list{
+      display: none;
+    }
+    .title{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1000px){
     .title{
         font-size: 72px;
     } 
@@ -96,17 +108,6 @@ h4{
         font-size: 22px;
     }  
 }
-@media screen and (max-width:600px){
-        div.menu-list{
-          display: none;
-        }
-        .title{
-            font-size: 22x;
-        }
-        h4{
-            font-size: 12px;
-        }
-    }
   @media screen and (min-width: 1001px){
         .title{
             font-size: 84px;
